@@ -1,10 +1,11 @@
 # Laravel 5 + Angular 2 boilerplate
 
-[[http://i.imgur.com/3sileJw.png|alt=laravel5-angular2]]
+![alt tag](http://i.imgur.com/3sileJw.png)
 
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000)](http://opensource.org/licenses/MIT)
 
 This is a boilerplate for Laravel5 + Angular2 projects.
+Webpack is used for bundling assets.
 
 Follow installation steps below to start a new project.
 
