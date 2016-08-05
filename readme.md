@@ -19,16 +19,13 @@ Follow installation steps below to start a new project.
 ## Installation
 
 - clone repository
-- run following commands in project's root folder:
-	- `composer install`
-	- `cp .env.example .env`
-	- `php artisan key:generate`
-	- `chmod -R 777 storage`
-	- `chmod -R 777 bootstrap/cache`
-	- `npm install`
-	- `gulp`
+- run installer script via `./install` or `bash install`
+
+> Installer is just a bash script that runs list of commands one-by-one. It is created to simplify installation process.
 
 At this point you can start develop your app. 
+
+Run `php artisan serve` to use development server.
 
 Run `gulp watch` to update assets bundle on the fly.
 
