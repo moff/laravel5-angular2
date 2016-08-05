@@ -65,4 +65,13 @@ elixir(function(mix) {
         'public/js',
         'resources/assets/typescript'
     );
+
+    mix.browserSync({
+        files: [
+            "public/js/*",
+            "public/css/*"
+        ],
+        proxy: "localhost:8000"
+    });
+
 });

@@ -14,26 +14,28 @@ Follow installation steps below to start a new project.
 - PHP >= 5.5.9
 - [Composer](https://getcomposer.org/download/) - Package manager for PHP
 - [NPM](https://npmjs.org/) - Node package manager
-- [Gulp](https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md#getting-started) ```npm install --global gulp```
+- [Gulp](https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md#getting-started)
 
 ## Installation
 
 - clone repository
 - run installer script via `./install` or `bash install`
 
-> Installer is just a bash script that runs list of commands one-by-one. It is created to simplify installation process.
+> Installer script is a bash script that runs list of commands one-by-one. It is created to simplify installation process.
 
-At this point you can start develop your app. 
+At this point you can start developing your app.
 
-Run `php artisan serve` to use development server.
+## Development
 
-Run `gulp watch` to update assets bundle on the fly.
+Run development script via `./develop` or `bash develop` to use development server.
+
+> Development script is a bash script that runs development php server and watches for changes with Gulp and Browsersync.
 
 ## Database
 
-In order to connect database set database credentials in `.env` file.
+Set proper credentials in `.env` file in order to use database.
 
-Run `php artisan migrate` to apply basic Laravel migrations.
+Run migrations via `php artisan migrate`.
 
 ## License
 

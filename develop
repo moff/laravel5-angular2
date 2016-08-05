@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+php artisan serve --port 8000 & gulp watch
