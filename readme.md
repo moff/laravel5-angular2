@@ -7,6 +7,13 @@
 This is a boilerplate for Laravel5 + Angular2 projects.
 Webpack is used for bundling assets.
 
+Features:
+
+- easy installation via script
+- minimum HTTP-requests:
+	- Webpack bundles your project into 2 files: `vendor.js` and `app.js`
+	- Angular templates and styles(.scss files) are handled by Webpack loaders and become inline   
+
 Follow installation steps below to start a new project.
 
 ## Requirements
@@ -27,7 +34,7 @@ At this point you can start developing your app.
 
 ## Development
 
-Run development script via `./develop` or `bash develop` to use development server.
+Run development script via `./develop` or `bash develop`.
 
 > Development script is a bash script that runs development php server and watches for changes with Gulp and Browsersync.
 
