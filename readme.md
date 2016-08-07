@@ -14,7 +14,6 @@ Webpack is used for bundling assets.
 	- Webpack bundles your project into 2 files: `vendor.js` and `app.js`
 	- Angular templates and styles(.scss files) are handled by Webpack loaders and become inline   
 
-Follow installation steps below to start a new project.
 
 ## Requirements
 
