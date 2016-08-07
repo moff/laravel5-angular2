@@ -32,6 +32,10 @@ elixir(function(mix) {
                     {
                         test: /\.html$/,
                         loader: 'raw-loader'
+                    },
+                    {
+                        test: /\.scss$/,
+                        loaders: ["raw", "sass"]
                     }
                 ]
             },
