@@ -7,7 +7,7 @@
 This is a boilerplate for Laravel5 + Angular2 projects.
 Webpack is used for bundling assets.
 
-Features:
+## Features:
 
 - easy installation via script
 - minimum HTTP-requests:
