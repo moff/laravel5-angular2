@@ -18,7 +18,7 @@ elixir(function(mix) {
 
     mix.webpack(
         {
-            app: 'app.ts',
+            app: 'main.ts',
             vendor: 'vendor.ts'
         },
         {
