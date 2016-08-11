@@ -70,6 +70,12 @@ elixir(function(mix) {
         'resources/assets/typescript'
     );
 
+    mix.version([
+        'css/app.css', 
+        'js/app.js',
+        'js/vendor.js'
+    ]);
+
     mix.browserSync({
         files: [
             "public/js/*",
