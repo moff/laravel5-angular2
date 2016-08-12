@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Laravel5 + Angular2 application</title>
         <base href='/'>
+        <title>Laravel5 + Angular2 application</title>
         <link rel="stylesheet" type="text/css" href="{{ elixir('css/app.css') }}">
     </head>
     <body>

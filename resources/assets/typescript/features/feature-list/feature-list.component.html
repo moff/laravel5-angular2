@@ -1,0 +1,8 @@
+<p>Feature list:</p>
+<ul>
+	<li *ngFor="let feature of features">
+		<a [routerLink]="['/features', feature.id]">{{ feature.description }}</a>
+	</li>
+</ul>
+<hr>
+<p><a routerLink='/'>Go to homepage</a></p>
