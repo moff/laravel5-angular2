@@ -4,9 +4,9 @@ import { FeatureComponent } from './features/feature/feature.component';
 import { HomeComponent } from './home/home.component';
 
 const appRoutes: Routes = [
-	{ path: '', component: HomeComponent },
-	{ path: 'features', component: FeatureListComponent },
-	{ path: 'features/:id', component: FeatureComponent }
+    { path: '', component: HomeComponent },
+    { path: 'features', component: FeatureListComponent },
+    { path: 'features/:id', component: FeatureComponent }
 ];
 
 export const appRoutingProviders: any[] = [];
