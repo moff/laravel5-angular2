@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-php artisan serve --port 8000 & gulp watch
+php artisan serve --port 8000 & gulp watch --max_old_space_size=4000
