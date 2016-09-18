@@ -7,6 +7,11 @@
 This is a boilerplate for Laravel5 + Angular2 projects.
 Webpack is used for bundling assets.
 
+## Versions
+- Laravel 5.3.9
+- Angular 2.0.0
+- Webpack 1.13.1
+
 ## Features:
 
 - easy installation via script
@@ -17,7 +22,7 @@ Webpack is used for bundling assets.
 
 ## Requirements
 
-- PHP >= 5.5.9
+- PHP >= 5.6.4
 - [Composer](https://getcomposer.org/download/) - Package manager for PHP
 - [NPM](https://npmjs.org/) - Node package manager
 - [Gulp](https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md#getting-started)
