@@ -12,13 +12,6 @@ Webpack is used for bundling assets.
 - Angular 2.0.0
 - Webpack 1.13.1
 
-## Features:
-
-- easy installation via script
-- minimum HTTP-requests:
-	- Webpack bundles your project into 2 files: `vendor.js` and `app.js`
-	- Angular templates and styles(.scss files) are handled by Webpack loaders and become inline   
-
 
 ## Requirements
 
@@ -26,6 +19,7 @@ Webpack is used for bundling assets.
 - [Composer](https://getcomposer.org/download/) - Package manager for PHP
 - [NPM](https://npmjs.org/) - Node package manager
 - [Gulp](https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md#getting-started)
+
 
 ## Installation
 
@@ -36,17 +30,30 @@ Webpack is used for bundling assets.
 
 At this point you can start developing your app.
 
+
 ## Development
 
 Run development script via `./develop` or `bash develop`.
 
 > Development script is a bash script that runs development php server and watches for changes with Gulp and Browsersync.
 
+
 ## Database
 
 Set proper credentials in `.env` file in order to use database.
 
 Run migrations via `php artisan migrate`.
+
+
+## Production
+
+Run `gulp --production` to merge and minify: 
+
+- JavaScript-files into `all.js` file.
+- CSS-files into `all.css` file.
+
+> Check `resources/views/welcome.blade.php` to see how to use those according to active environment. Don't forget to run `php artisan config:cache` when change environment in `.env` file.
+
 
 ## License
 

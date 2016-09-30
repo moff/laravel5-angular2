@@ -73,8 +73,19 @@ elixir(function(mix) {
     mix.version([
         'css/app.css', 
         'js/app.js',
-        'js/vendor.js'
+        'js/vendor.js',
+        'js/all.js',
+        'css/all.css'
     ]);
+    
+    mix.scripts([
+        'vendor.js',
+        'app.js'
+    ], 'public/js/all.js', 'public/js');
+    
+    mix.styles([
+        'app.css'
+    ], 'public/css/all.css', 'public/css');
 
     mix.browserSync({
         files: [
