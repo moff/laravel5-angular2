@@ -2,6 +2,8 @@ var elixir = require('laravel-elixir');
 var webpack = require('webpack')
 require('laravel-elixir-webpack-ex');
 
+var isProduction = elixir.config.production;
+
 /*
  |--------------------------------------------------------------------------
  | Elixir Asset Management
@@ -70,27 +72,35 @@ elixir(function(mix) {
         'resources/assets/typescript'
     );
 
-    mix.version([
-        'css/app.css', 
+    var versioningFile = [
+        'css/app.css',
         'js/app.js',
-        'js/vendor.js',
-        'js/all.js',
-        'css/all.css'
-    ]);
-    
-    mix.scripts([
-        'vendor.js',
-        'app.js'
-    ], 'public/js/all.js', 'public/js');
-    
-    mix.styles([
-        'app.css'
-    ], 'public/css/all.css', 'public/css');
+        'js/vendor.js'
+    ];
+
+    // run only if gulp --production
+    if (isProduction) {
+        versioningFile = versioningFile.concat([
+            'js/all.js',
+            'css/all.css'
+        ]);
+
+        mix.scripts([
+            'vendor.js',
+            'app.js'
+        ], 'public/js/all.js', 'public/js');
+
+        mix.styles([
+            'app.css'
+        ], 'public/css/all.css', 'public/css');
+    }
+
+    mix.version(versioningFile);
 
     mix.browserSync({
         files: [
-            "public/js/*",
-            "public/css/*"
+            "public/build/js/*",
+            "public/build/css/*"
         ],
         proxy: "localhost:8000"
     });
